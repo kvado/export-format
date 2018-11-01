@@ -71,7 +71,7 @@ function prettyPrint( $json )
                     $post = " ";
                     break;
 
-                case " ": case "\t": case "\n": case "\r":
+                case " ": case "  ": case "\n": case "\r":
                 $char = "";
                 $ends_line_level = $new_line_level;
                 $new_line_level = NULL;
@@ -81,7 +81,7 @@ function prettyPrint( $json )
             $in_escape = true;
         }
         if( $new_line_level !== NULL ) {
-            $result .= "\n".str_repeat( "\t", $new_line_level );
+            $result .= "\n".str_repeat( "  ", $new_line_level );
         }
         $result .= $char.$post;
     }
