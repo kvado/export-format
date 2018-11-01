@@ -18,4 +18,7 @@
 |entity|Юр. лицо|object|Объект с [данными о владельце, если юр. лицо](#entity-object)|
 
 {include:residences/residence.md}
+
 {include:individual/individual.md}
+
+{include:entity/entity.md}

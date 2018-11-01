@@ -18,17 +18,5 @@
     {include-json: residences/residence.json}
   ],
   "individual": {include-json: individual/individual.json},
-  "entity": {
-    "title": "...",
-    "inn": "...",
-    "kpp": "...",
-    "ogrn": "...",
-    "legal_address": "...",
-    "head_fullname": "...",
-    "head_post": "...",
-    "bic": "...",
-    "bank": "...",
-    "bank_account": "...",
-    "bank_corr_account": "..."
-  }
+  "entity": {include-json: entity/entity.json}
 }
