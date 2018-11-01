@@ -6,96 +6,96 @@
 Json файл должен иметь следующую струкуру:
 <pre>
 {
-	"houses": [
-		{
-			"id": "...",
-			"address": "...",
-			"fias_houseguid": "...",
-			"oktmo": "...",
-			"cadastral_number": "",
-			"gis_id": "...",
-			"entrances": [
-				{
-					"id": "...",
-					"number": "...",
-					"floors": "..."
-				}
-			],
-			"premises": [
-				{
-					"id": "...",
-					"flat_number": "...",
-					"premises_type": "...",
-					"overall_area": "...",
-					"living_area": "...",
-					"number_of_rooms": "...",
-					"entrance": "...",
-					"floor": "...",
-					"radio": "...",
-					"number_of_tv": "...",
-					"gis_id": "...",
-					"elevator": "...",
-					"internet": "...",
-					"intercom": "...",
-					"rooms": [
-						{
-							"id": "...",
-							"rooms_height": "...",
-							"number": "...",
-							"type": "...",
-							"title": "...",
-							"area": "...",
-							"balcony_area": "...",
-							"loggia_area": "...",
-							"rooms_layout": "...",
-							"entrance": "...",
-							"floor_covering": "...",
-							"comment": "...",
-							"radio": "...",
-							"number_of_tv": "...",
-							"gis_id": "..."
-						}
-					],
-					"accounts": [
-						{
-							"account": "...",
-							"date_from": "...",
-							"date_to": "...",
-							"registered": "...",
-							"residents_count": "...",
-							"saldo": "...",
-							"saldo_period": "...",
-							"calculated_area": "...",
-							"old_account": "...",
-							"property_type": "...",
-							"gis_id": "...",
-							"gis_zhkh_id": "...",
-							"rooms_id": "...",
-							"residents": [
-								{
-									"id": "...",
-									"rooms_height": "...",
-									"number": "...",
-									"type": "...",
-									"title": "...",
-									"area": "...",
-									"balcony_area": "...",
-									"loggia_area": "...",
-									"rooms_layout": "...",
-									"entrance": "...",
-									"floor_covering": "...",
-									"comment": "...",
-									"radio": "...",
-									"number_of_tv": "...",
-									"gis_id": "..."
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+  "houses": [
+    {
+      "id": "...",
+      "address": "...",
+      "fias_houseguid": "...",
+      "oktmo": "...",
+      "cadastral_number": "",
+      "gis_id": "...",
+      "entrances": [
+        {
+          "id": "...",
+          "number": "...",
+          "floors": "..."
+        }
+      ],
+      "premises": [
+        {
+          "id": "...",
+          "flat_number": "...",
+          "premises_type": "...",
+          "overall_area": "...",
+          "living_area": "...",
+          "number_of_rooms": "...",
+          "entrance": "...",
+          "floor": "...",
+          "radio": "...",
+          "number_of_tv": "...",
+          "gis_id": "...",
+          "elevator": "...",
+          "internet": "...",
+          "intercom": "...",
+          "rooms": [
+            {
+              "id": "...",
+              "rooms_height": "...",
+              "number": "...",
+              "type": "...",
+              "title": "...",
+              "area": "...",
+              "balcony_area": "...",
+              "loggia_area": "...",
+              "rooms_layout": "...",
+              "entrance": "...",
+              "floor_covering": "...",
+              "comment": "...",
+              "radio": "...",
+              "number_of_tv": "...",
+              "gis_id": "..."
+            }
+          ],
+          "accounts": [
+            {
+              "account": "...",
+              "date_from": "...",
+              "date_to": "...",
+              "registered": "...",
+              "residents_count": "...",
+              "saldo": "...",
+              "saldo_period": "...",
+              "calculated_area": "...",
+              "old_account": "...",
+              "property_type": "...",
+              "gis_id": "...",
+              "gis_zhkh_id": "...",
+              "rooms_id": "...",
+              "residents": [
+                {
+                  "id": "...",
+                  "rooms_height": "...",
+                  "number": "...",
+                  "type": "...",
+                  "title": "...",
+                  "area": "...",
+                  "balcony_area": "...",
+                  "loggia_area": "...",
+                  "rooms_layout": "...",
+                  "entrance": "...",
+                  "floor_covering": "...",
+                  "comment": "...",
+                  "radio": "...",
+                  "number_of_tv": "...",
+                  "gis_id": "..."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 </pre>
 Объекта массива houses (дома), который включает в себя:

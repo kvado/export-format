@@ -10,18 +10,20 @@ function render($file)
 {
     $template = file_get_contents($file);
     $template = preg_replace_callback("/\{include\:(.+)\}/", function ($matches) {
-        if (file_exists(trim($matches[1]))) {
-            return render(trim($matches[1]));
+        if (file_exists(trim($matches[1],'" '))) {
+            return render(trim($matches[1],'" '));
+        } else {
+            echo 'file non exists '.getcwd().$matches[1];die;
         }
         return getcwd() . $matches[0];
 
     }, $template);
 
     $template = preg_replace_callback("/\{include-json\:(.+)\}/", function ($matches) {
-        if (file_exists(trim($matches[1]))) {
-            return prettyPrint(json_encode(json_decode(render(trim($matches[1])), JSON_PRETTY_PRINT)));
+        if (file_exists(trim($matches[1],'" '))) {
+            return prettyPrint(json_encode(json_decode(render(trim($matches[1],'" ')), JSON_PRETTY_PRINT)));
         } else {
-            echo 'file non exists '.$matches[1];die;;
+            echo 'file non exists '.getcwd().$matches[1];die;
         }
         return getcwd() . $matches[0];
 
