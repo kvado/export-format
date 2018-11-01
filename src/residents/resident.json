@@ -15,7 +15,7 @@
   "date_from": "...",
   "date_to": "...",
   "residence": [
-    {include-json: residences/residence.json},
+    {include-json:residences/residence.json},
   ],
   "individual": {include-json: individual/individual.json},
   "entity": {include-json: entity/entity.json}
