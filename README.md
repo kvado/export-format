@@ -1,5 +1,5 @@
 # export-format
-Описание формата фала для экспорта данных в сторонние системы
+Описание формата файла для экспорта данных в сторонние системы
 
 <h2>Сведения о домах, помещениях, комнатах, лицевых счетах, собственниках, регистрациях.</h2>
 
@@ -40,7 +40,6 @@ Json файл должен иметь следующую струкуру:
           "rooms": [
             {
               "id": "...",
-              "rooms_height": "...",
               "number": "...",
               "type": "...",
               "title": "...",
@@ -49,6 +48,7 @@ Json файл должен иметь следующую струкуру:
               "loggia_area": "...",
               "rooms_layout": "...",
               "entrance": "...",
+              "rooms_height": "...",
               "floor_covering": "...",
               "comment": "...",
               "radio": "...",
@@ -72,84 +72,7 @@ Json файл должен иметь следующую струкуру:
               "gis_zhkh_id": "...",
               "rooms_id": "...",
               "residents": [
-                {
-                  "id": "...",
-                  "premise_relation": "...",
-                  "type": "...",
-                  "share": "1\/2",
-                  "mobile_phone_1": "...",
-                  "mobile_phone_2": "...",
-                  "home_phone": "...",
-                  "work_phone": "...",
-                  "date_from": "...",
-                  "date_to": "...",
-                  "email": "...",
-                  "email2": "...",
-                  "registration_address": "...",
-                  "living_address": "...",
-                  "relationship": "...",
-                  "residence": [
-                    {
-                      "type": "...",
-                      "date_from": "...",
-                      "date_to": "...",
-                      "from": {
-                        "country": "...",
-                        "region": "...",
-                        "district": "...",
-                        "city": "...",
-                        "locality": "...",
-                        "street": "...",
-                        "house": "...",
-                        "flat": "..."
-                      },
-                      "to": {
-                        "country": "...",
-                        "region": "...",
-                        "district": "...",
-                        "city": "...",
-                        "locality": "...",
-                        "street": "...",
-                        "house": "...",
-                        "flat": "..."
-                      }
-                    }
-                  ],
-                  "individual": {
-                    "firstname": "...",
-                    "lastname": "...",
-                    "patronymic": "...",
-                    "document_type": "...",
-                    "document_serial": "...",
-                    "document_number": "...",
-                    "document_issued": "...",
-                    "document_code": "...",
-                    "document_issue_date": "...",
-                    "ssn": "...",
-                    "birthdate": "...",
-                    "sex": "...",
-                    "birthplace_country": "...",
-                    "birthplace_region": "...",
-                    "birthplace_district": "...",
-                    "birthplace_city": "...",
-                    "birthplace_locality": "...",
-                    "citizenship": "...",
-                    "military_liability": "..."
-                  },
-                  "entity": {
-                    "title": "...",
-                    "inn": "...",
-                    "kpp": "...",
-                    "ogrn": "...",
-                    "legal_address": "...",
-                    "head_fullname": "...",
-                    "head_post": "...",
-                    "bic": "...",
-                    "bank": "...",
-                    "bank_account": "...",
-                    "bank_corr_account": "..."
-                  }
-                }
+                null
               ]
             }
           ]
@@ -166,11 +89,11 @@ Json файл должен иметь следующую струкуру:
 
 |Поле|Название поля|Тип|Описание|
 |---|---|---|---|
-|address|Адрес дома|String||
-|fias_houseguid|Код дома по ФИАС|String||
-|oktmo|Код ОКТМО|String||
-|cadastral_number|Кадастровый номер дома|String||
-|gis_id|Идентификатор дома в ГИС ЖКХ|String||
+|address|Адрес дома|string||
+|fias_houseguid|Код дома по ФИАС|string||
+|oktmo|Код ОКТМО|string||
+|cadastral_number|Кадастровый номер дома|string||
+|gis_id|Идентификатор дома в ГИС ЖКХ|string||
 |entrances|Подъезды|array|Массив с [объектами, хранящими информацию о подъездах](#array-entrances-object)|
 |premises|Помещения|array|Массив с [объектами, хранящими информацию о помещениях](#array-premises-object)|
 
@@ -180,7 +103,7 @@ Json файл должен иметь следующую струкуру:
 
 |Поле|Название поля|Тип|Описание|
 |---|---|---|---|
-|number|Номер подъезда|String|---|
+|number|Номер подъезда|string|---|
 |floors|Количество этажей|Integer|---|
 
 |Поле|Название поля|Тип|Описание|
@@ -194,6 +117,10 @@ Json файл должен иметь следующую струкуру:
 |floor|Номер этажа|int||
 |radio|Наличие радио|bool|`true` или `false`|
 |number_of_tv|Количество ТВ-антенн|int||
+|gis_id|Идентификатор в ГИС ЖКХ|string||
+|elevator|Наличие лифта|enum|Возможные значения <ul><li>нет</li><li>есть</li>|
+|internet|Наличие интернета|enum|Возможные значения <ul><li>нет</li><li>есть</li>|
+
 |accounts|Лицевые счета|array|Массив с [объектами, хранящими данные о ЛС](#array-accounts-object) |
 
 
@@ -215,6 +142,7 @@ Json файл должен иметь следующую струкуру:
 |comment|Примечание|string||
 |radio|Наличие радио|bool|`true` или `false`|
 |number_of_tv|Количество ТВ антенн|int||
+|gis_id|Идентификатор в ГИС ЖКХ|sting||
 
 
 #### <a id="array-accounts-object"></a>Описание объекта массива `accounts`
@@ -239,7 +167,6 @@ Json файл должен иметь следующую струкуру:
 |Поле|Название поля|Тип|Описание|
 |---|---|---|---|
 |type|Тип жителя(собственника)|enum|Возможные значения:<ul><li>физ. лицо</li><li>юр. лицо</li></ul>|
-|is_owner|Собственник|enum|Возможные значения:<ul><li>Да</li><li>Нет</li></ul> для юр. лица всегда "Да"|
 |main_payer|Основной плательщик|enum|Возможные значения:<ul><li>Да</li><li>Нет</li></ul>|
 |share|Доля собственности|string|В формате «142/584», «1/2», «1/1»|
 |mobile_phone_1|Мобильный телефон|string||
@@ -247,7 +174,12 @@ Json файл должен иметь следующую струкуру:
 |home_phone|Домашний телефон|string||
 |work_phone|Рабочий телефон|string||
 |email|Email|string||
+|email2|Email|string||
 |relationship|enum|string|Возможные значения:<ul><li>"собственник"</li><li>"наниматель"</li><li>"квартирант"</li><li>"муж"</li><li>"жена"</li><li>"сын"</li><li>"дочь"</li><li>"брат"</li><li>"сестра"</li><li>"дедушка"</li><li>"бабушка"</li><li>"зять"</li><li>"тесть"</li><li>"теща"</li><li>"свекор"</li><li>"свекровь"</li><li>"шурин"</li><li>"свояченица"</li><li>"невестка"</li><li>"деверь"</li><li>"золовка"</li><li>"мать"</li><li>"отец"</li><li>"внук"</li><li>"внучка"</li><li>"опекаемый(ая)"</li><li>"падчерица"</li><li>"пасынок"</li><li>"племянник"</li><li>"племянница"</li><li>"нет родственных отношений"</li></ul>|
+|registration_address|Адрес регистрации|string||
+|living_address|Адрес места жительства|string||
+|date_from|дата начала учета|[Дата](#type-date)|См. тип [Дата](#type-date)
+|date_to|дата окончания учета|[Дата](#type-date)|См. тип [Дата](#type-date)
 |residence|Регистрация|object|Объект с [данными о регистрации, если физ. лицо](#residence)|
 |individual|Физ. лицо|object|Объект с [данными о владельце, если физ. лицо](#individual-object)|
 |entity|Юр. лицо|object|Объект с [данными о владельце, если юр. лицо](#entity-object)|
@@ -263,6 +195,29 @@ Json файл должен иметь следующую струкуру:
 |to|Регистрация|object|Нет|Объект с [листком убытия](#to)|
 
 
+###### <a id="from"></a>Описание объекта `from`
+|Поле|Название поля|Тип|Обязательное|Описание|
+|---|---|---|---|---|
+|country|Страна|string|Нет||
+|region|Страна|string|Нет||
+|district|Страна|string|Нет||
+|city|Страна|string|Нет||
+|locality|Страна|string|Нет||
+|street|Страна|string|Нет||
+|house|Страна|string|Нет||
+|flat|Страна|string|Нет||
+
+###### <a id="to"></a>Описание объекта `to`
+|Поле|Название поля|Тип|Обязательное|Описание|
+|---|---|---|---|---|
+|country|Страна|string|Нет||
+|region|Страна|string|Нет||
+|district|Страна|string|Нет||
+|city|Страна|string|Нет||
+|locality|Страна|string|Нет||
+|street|Страна|string|Нет||
+|house|Страна|string|Нет||
+|flat|Страна|string|Нет||
 
 
 ###### <a id="individual-object"></a>Описание объекта `individual`

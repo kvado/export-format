@@ -1,21 +1,21 @@
 {
   "id": "...",
-  "premise_relation": "...",
   "type": "...",
+  "main_payer": "...",
   "share": "1/2",
   "mobile_phone_1": "...",
   "mobile_phone_2": "...",
   "home_phone": "...",
   "work_phone": "...",
-  "date_from": "...",
-  "date_to": "...",
   "email": "...",
   "email2": "...",
+  "relationship": "...",
   "registration_address": "...",
   "living_address": "...",
-  "relationship": "...",
+  "date_from": "...",
+  "date_to": "...",
   "residence": [
-    {include-json: residences/residence.json}
+    {include-json: residences/residence.json},
   ],
   "individual": {include-json: individual/individual.json},
   "entity": {include-json: entity/entity.json}

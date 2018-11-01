@@ -16,3 +16,4 @@
 |comment|Примечание|string||
 |radio|Наличие радио|bool|`true` или `false`|
 |number_of_tv|Количество ТВ антенн|int||
+|gis_id|Идентификатор в ГИС ЖКХ|sting||
