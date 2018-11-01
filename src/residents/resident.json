@@ -1,78 +1,34 @@
-                {
-                  "id": "...",
-                  "premise_relation": "...",
-                  "type": "...",
-                  "share": "1/2",
-                  "mobile_phone_1": "...",
-                  "mobile_phone_2": "...",
-                  "home_phone": "...",
-                  "work_phone": "...",
-                  "date_from": "...",
-                  "date_to": "...",
-                  "email": "...",
-                  "email2": "...",
-                  "registration_address": "...",
-                  "living_address": "...",
-                  "relationship": "...",
-                  "residence": [
-                    {
-                      "type": "...",
-                      "date_from": "..."
-                      "date_to": "...",
-                      "from": {
-                        "country": "...",
-                        "region": "...",
-                        "district": "...",
-                        "city": "...",
-                        "locality": "...",
-                        "street": "...",
-                        "house": "...",
-                        "flat": "..."
-                      },
-                      "to": {
-                        "country": "...",
-                        "region": "...",
-                        "district": "...",
-                        "city": "...",
-                        "locality": "...",
-                        "street": "...",
-                        "house": "...",
-                        "flat": "..."
-                      }
-                    }
-                  ],
-                  "individual": {
-                    "firstname": "...",
-                    "lastname": "...",
-                    "patronymic": "...",
-                    "document_type": "...",
-                    "document_serial": "...",
-                    "document_number": "...",
-                    "document_issued": "...",
-                    "document_code": "...",
-                    "document_issue_date": "...",
-                    "ssn": "...",
-                    "birthdate": "...",
-                    "sex": "...",
-                    "birthplace_country": "...",
-                    "birthplace_region": "...",
-                    "birthplace_district": "...",
-                    "birthplace_city": "...",
-                    "birthplace_locality": "...",
-                    "citizenship": "...",
-                    "military_liability": "..."
-                  },
-                  "entity": {
-                    "title": "...",
-                    "inn": "...",
-                    "kpp": "...",
-                    "ogrn": "...",
-                    "legal_address": "...",
-                    "head_fullname": "...",
-                    "head_post": "...",
-                    "bic": "...",
-                    "bank": "...",
-                    "bank_account": "...",
-                    "bank_corr_account": "..."
-                  }
-                }
+{
+  "id": "...",
+  "premise_relation": "...",
+  "type": "...",
+  "share": "1/2",
+  "mobile_phone_1": "...",
+  "mobile_phone_2": "...",
+  "home_phone": "...",
+  "work_phone": "...",
+  "date_from": "...",
+  "date_to": "...",
+  "email": "...",
+  "email2": "...",
+  "registration_address": "...",
+  "living_address": "...",
+  "relationship": "...",
+  "residence": [
+    {include-json: residences/residence.json}
+  ],
+  "individual": {include-json: individual/individual.json},
+  "entity": {
+    "title": "...",
+    "inn": "...",
+    "kpp": "...",
+    "ogrn": "...",
+    "legal_address": "...",
+    "head_fullname": "...",
+    "head_post": "...",
+    "bic": "...",
+    "bank": "...",
+    "bank_account": "...",
+    "bank_corr_account": "..."
+  }
+}

@@ -1,0 +1,22 @@
+{
+
+  "firstname": "...",
+  "lastname": "...",
+  "patronymic": "...",
+  "document_type": "...",
+  "document_serial": "...",
+  "document_number": "...",
+  "document_issued": "...",
+  "document_code": "...",
+  "document_issue_date": "...",
+  "ssn": "...",
+  "birthdate": "...",
+  "sex": "...",
+  "birthplace_country": "...",
+  "birthplace_region": "...",
+  "birthplace_district": "...",
+  "birthplace_city": "...",
+  "birthplace_locality": "...",
+  "citizenship": "...",
+  "military_liability": "..."
+}

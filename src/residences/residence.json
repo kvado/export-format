@@ -1,0 +1,25 @@
+{
+  "type": "...",
+  "date_from": "...",
+  "date_to": "...",
+  "from": {
+    "country": "...",
+    "region": "...",
+    "district": "...",
+    "city": "...",
+    "locality": "...",
+    "street": "...",
+    "house": "...",
+    "flat": "..."
+  },
+  "to": {
+    "country": "...",
+    "region": "...",
+    "district": "...",
+    "city": "...",
+    "locality": "...",
+    "street": "...",
+    "house": "...",
+    "flat": "..."
+  }
+}

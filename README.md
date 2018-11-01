@@ -74,20 +74,81 @@ Json файл должен иметь следующую струкуру:
               "residents": [
                 {
                   "id": "...",
-                  "rooms_height": "...",
-                  "number": "...",
+                  "premise_relation": "...",
                   "type": "...",
-                  "title": "...",
-                  "area": "...",
-                  "balcony_area": "...",
-                  "loggia_area": "...",
-                  "rooms_layout": "...",
-                  "entrance": "...",
-                  "floor_covering": "...",
-                  "comment": "...",
-                  "radio": "...",
-                  "number_of_tv": "...",
-                  "gis_id": "..."
+                  "share": "1\/2",
+                  "mobile_phone_1": "...",
+                  "mobile_phone_2": "...",
+                  "home_phone": "...",
+                  "work_phone": "...",
+                  "date_from": "...",
+                  "date_to": "...",
+                  "email": "...",
+                  "email2": "...",
+                  "registration_address": "...",
+                  "living_address": "...",
+                  "relationship": "...",
+                  "residence": [
+                    {
+                      "type": "...",
+                      "date_from": "...",
+                      "date_to": "...",
+                      "from": {
+                        "country": "...",
+                        "region": "...",
+                        "district": "...",
+                        "city": "...",
+                        "locality": "...",
+                        "street": "...",
+                        "house": "...",
+                        "flat": "..."
+                      },
+                      "to": {
+                        "country": "...",
+                        "region": "...",
+                        "district": "...",
+                        "city": "...",
+                        "locality": "...",
+                        "street": "...",
+                        "house": "...",
+                        "flat": "..."
+                      }
+                    }
+                  ],
+                  "individual": {
+                    "firstname": "...",
+                    "lastname": "...",
+                    "patronymic": "...",
+                    "document_type": "...",
+                    "document_serial": "...",
+                    "document_number": "...",
+                    "document_issued": "...",
+                    "document_code": "...",
+                    "document_issue_date": "...",
+                    "ssn": "...",
+                    "birthdate": "...",
+                    "sex": "...",
+                    "birthplace_country": "...",
+                    "birthplace_region": "...",
+                    "birthplace_district": "...",
+                    "birthplace_city": "...",
+                    "birthplace_locality": "...",
+                    "citizenship": "...",
+                    "military_liability": "..."
+                  },
+                  "entity": {
+                    "title": "...",
+                    "inn": "...",
+                    "kpp": "...",
+                    "ogrn": "...",
+                    "legal_address": "...",
+                    "head_fullname": "...",
+                    "head_post": "...",
+                    "bic": "...",
+                    "bank": "...",
+                    "bank_account": "...",
+                    "bank_corr_account": "..."
+                  }
                 }
               ]
             }
@@ -191,4 +252,31 @@ Json файл должен иметь следующую струкуру:
 |residence|Регистрация|object|Объект с [данными о регистрации, если физ. лицо](#residence)|
 |individual|Физ. лицо|object|Объект с [данными о владельце, если физ. лицо](#individual-object)|
 |entity|Юр. лицо|object|Объект с [данными о владельце, если юр. лицо](#entity-object)|
+
+
+###### <a id="residence"></a>Описание объекта `residence`
+|Поле|Название поля|Тип|Обязательное|Описание|
+|---|---|---|---|---|
+|type|Тип регистрации|enum('const','tmp')|Да|Возможные значения:<ul><li><b>const</b> - по месту жительства (постоянная)</li><li><b>tmp</b> - по месту пребывания (временная)</li></ul><br>||
+|date_from|Дата начала регистрации|[Дата](#type-date)|Да|См. тип [Дата](#type-date)|
+|date_to|Дата окончания регистрации|[Дата](#type-date)|Нет|См. тип [Дата](#type-date)|
+|from|Регистрация|object|Нет|Объект с [листком прибытия](#from)|
+|to|Регистрация|object|Нет|Объект с [листком убытия](#to)|
+
+
+
+###### <a id="individual-object"></a>Описание объекта `individual`
+
+|Поле|Название поля|Тип|Описание|
+|---|---|---|---|
+|firstname|Имя|string||
+|lastname|Фамилия|string||
+|patronymic|Отчество|string||
+|passport_serial|Серия паспорта|string||
+|passport_number|Номер паспорта|string||
+|passport_issued|Кем выдан|string||
+|passport_code|Код подразделения|string||
+|passport_issue_date|Дата выдачи|[Дата](#type-date)|См. тип [Дата](#type-date)|
+|ssn|СНИЛС|string|Нет||
+|birthdate|Дата рождения|[Дата](#type-date)|См. тип [Дата](#type-date)|
 

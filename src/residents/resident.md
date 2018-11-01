@@ -16,3 +16,6 @@
 |residence|Регистрация|object|Объект с [данными о регистрации, если физ. лицо](#residence)|
 |individual|Физ. лицо|object|Объект с [данными о владельце, если физ. лицо](#individual-object)|
 |entity|Юр. лицо|object|Объект с [данными о владельце, если юр. лицо](#entity-object)|
+
+{include:residences/residence.md}
+{include:individual/individual.md}

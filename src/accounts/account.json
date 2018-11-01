@@ -13,6 +13,6 @@
                   "gis_zhkh_id": "...",
                   "rooms_id": "...",
                   "residents": [
-                    {include-json:"rooms/room.json"}
+                    {include-json:"residents/resident.json"}
                   ]
                 }
