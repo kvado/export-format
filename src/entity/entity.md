@@ -10,3 +10,7 @@
 |legal_address|Юридический адрес|string||
 |head_fullname|ФИО руководителя|string||
 |head_post|Должность руководителя|string||
+|bic|Банковский индивидуальный код|string||
+|bank|Наименование банка|string||
+|bank_account|Расчетный счет|string||
+|bank_corr_account|Корреспондентский счет|string||

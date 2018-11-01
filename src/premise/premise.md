@@ -9,13 +9,12 @@
 |number_of_rooms|Количество комнат|int||
 |entrance|Номер подъезда|string||
 |floor|Номер этажа|int||
-|radio|Наличие радио|bool|`true` или `false`|
+|radio|Наличие радио|enum|Возможные значения <ul><li>нет</li><li>есть</li>|
 |number_of_tv|Количество ТВ-антенн|int||
 |gis_id|Идентификатор в ГИС ЖКХ|string||
 |elevator|Наличие лифта|enum|Возможные значения <ul><li>нет</li><li>есть</li>|
 |internet|Наличие интернета|enum|Возможные значения <ul><li>нет</li><li>есть</li>|
 |intercom|Наличие домофона|enum|Возможные значения <ul><li>нет</li><li>есть</li>|
-
 |accounts|Лицевые счета|array|Массив с [объектами, хранящими данные о ЛС](#array-accounts-object) |
 
 
