@@ -3,6 +3,7 @@
   "firstname": "...",
   "lastname": "...",
   "patronymic": "...",
+  "previous_lastname": "...",
   "document_type": "...",
   "document_serial": "...",
   "document_number": "...",

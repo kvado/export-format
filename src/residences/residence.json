@@ -2,6 +2,7 @@
   "type": "...",
   "date_from": "...",
   "date_to": "...",
+  "out_reason": "...",
   "from": {
     "country": "...",
     "region": "...",
