@@ -1,0 +1,18 @@
+                {
+                  "account": "...",
+                  "date_from": "...",
+                  "date_to": "...",
+                  "registered": "...",
+                  "residents_count": "...",
+                  "saldo": "...",
+                  "saldo_period": "...",
+                  "calculated_area": "...",
+                  "old_account": "...",
+                  "property_type": "...",
+                  "gis_id": "...",
+                  "gis_zhkh_id": "...",
+                  "rooms_id": "...",
+                  "residents": [
+                    {include-json:"rooms/room.json"}
+                  ]
+                }

@@ -1,0 +1,22 @@
+            {
+              "id": "...",
+              "flat_number": "...",
+              "premises_type": "...",
+              "overall_area": "...",
+              "living_area": "...",
+              "number_of_rooms": "...",
+              "entrance": "...",
+              "floor": "...",
+              "radio": "...",
+              "number_of_tv": "...",
+              "gis_id": "...",
+              "elevator": "...",
+              "internet": "...",
+              "intercom": "...",
+              "rooms": [
+{include-json:rooms/room.json}
+              ],
+              "accounts": [
+{include-json:accounts/account.json}
+              ]
+            }

@@ -1,0 +1,18 @@
+{
+  "houses": [
+    {
+      "id": "...",
+      "address": "...",
+      "fias_houseguid": "...",
+      "oktmo": "...",
+      "cadastral_number": "",
+      "gis_id": "...",
+      "entrances": [
+        {include-json: entrances/entrance.json}
+      ],
+      "premises": [
+        {include-json: premise/premise.json}
+      ]
+    }
+  ]
+}
