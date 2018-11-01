@@ -13,6 +13,7 @@
               "elevator": "...",
               "internet": "...",
               "intercom": "...",
+              "cadastral_number": "...",
               "rooms": [
 {include-json:rooms/room.json}
               ],

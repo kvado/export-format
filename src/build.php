@@ -21,7 +21,13 @@ function render($file)
 
     $template = preg_replace_callback("/\{include-json\:(.+)\}/", function ($matches) {
         if (file_exists(trim($matches[1],'" '))) {
-            return prettyPrint(json_encode(json_decode(render(trim($matches[1],'" ')), JSON_PRETTY_PRINT)));
+            $res = prettyPrint(json_encode(json_decode(render(trim($matches[1],'" ')), JSON_PRETTY_PRINT)));
+            if ('null' == $res){
+                var_dump($matches[1]);
+                var_dump(render(trim($matches[1],'" ')));
+                var_dump(json_last_error_msg());die;
+            }
+            return $res;
         } else {
             echo 'file non exists '.getcwd().$matches[1];die;
         }
