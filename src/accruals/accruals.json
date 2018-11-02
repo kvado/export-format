@@ -1,0 +1,16 @@
+[
+  {
+    "id": "...",
+    "accounts_id": "...",
+    "period": "...",
+    "utilities_id": "...",
+    "utilities_title": "...",
+    "calculated_by": "...",
+    "bet": "...",
+    "cost": "...",
+    "volume": "...",
+    "value": "...",
+    "recalc": "...",
+    "privileges": "..."
+  }
+]
