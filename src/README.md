@@ -7,6 +7,8 @@
 
 {include:accruals/accruals.md}
 
+{include:payments/payments.md}
+
 ## <a id="custom-types"></a>Пользовательские типы
 
 |Тип|Описание|

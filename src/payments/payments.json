@@ -1,0 +1,15 @@
+{
+  "id": "...",
+  "accounts_id": "...",
+  "number": "...",
+  "date": "...",
+  "sum": "...",
+  "period": "...",
+  "comment": "...",
+  "bank_account": "...",
+  "correction": "...",
+  "source": "...",
+  "register_type": "...",
+  "register_number": "...",
+  "register_date": "..."
+}
