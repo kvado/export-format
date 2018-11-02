@@ -14,8 +14,8 @@ Json файл должен иметь следующую струкуру:
 |utilities_id|Идентификатор услуги в КВАДО.РУ|int||
 |utilities_title|Наименование услуги|string||
 |period|Период начисления|[Период](#type-period)|См. тип [Период](#type-period)|
-|calculated_by|Способ расчета для коммунальных услуг|enum|<ul><li>counter - по счетчику</li><li>average - по среднему</li><li>standard - по нормативу</li></ul>|
-|bet|Ставка тарифа|enum|<ul><li>Основная</li><li>день</li><li>ночь</li><li>пик</li><li>полупик</li></ul>|
+|calculated_by|Способ расчета для коммунальных услуг|enum|Возможные значения: <ul><li>counter - по счетчику</li><li>average - по среднему</li><li>standard - по нормативу</li></ul>|
+|bet|Ставка тарифа|enum|Возможные значения:<ul><li>Основная</li><li>день</li><li>ночь</li><li>пик</li><li>полупик</li></ul>|
 |cost|Тариф|decimal(10,2)|||
 |volume|Объем (расход)|decimal(15,5)|||
 |value|Сумма начислено|decimal(10,2)|||
