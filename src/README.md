@@ -1,6 +1,10 @@
 # export-format
 Описание формата файлов для экспорта данных в сторонние системы
 
+{include:contents.md}
+
+{include:houses/houses.md}
+
 {include:houses/houses.md}
 
 {include:counters/counters.md}
