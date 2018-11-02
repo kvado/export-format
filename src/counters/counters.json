@@ -15,6 +15,7 @@
   "flats_id" : "...",
   "rooms_id" : "...",
   "capacity" : "...",
+  "gis_id" : "...",
   "values" : [
     {include-json:counters-values/values.json}
   ]
