@@ -5,8 +5,6 @@
 
 {include:houses/houses.md}
 
-{include:houses/houses.md}
-
 {include:counters/counters.md}
 
 {include:accruals/accruals.md}
