@@ -9,6 +9,7 @@
         <li><a href="#array-premises-object"> Описание полей оъекта в массиве `premises`</li>
         <li><a href="#array-rooms-object"> Описание объекта массива `rooms`</li>
         <li><a href="#array-accounts-object"> Описание объекта массива `accounts`</li>
+        <li><a href="#array-owners-object"> Описание объекта массива `residents`</li>
         <li><a href="#residence"> Описание объекта массива `residence`
         <ul>
             <li><a href="#from">Описание объекта массива `from`</li>
