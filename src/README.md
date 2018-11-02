@@ -3,7 +3,7 @@
 
 {include:houses/houses.md}
 
-
+{include:counters/counters.md}
 
 ## <a id="custom-types"></a>Пользовательские типы
 

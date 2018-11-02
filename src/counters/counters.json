@@ -1,0 +1,22 @@
+{
+  "id":"...",
+  "type": "...",
+  "title": "...",
+  "serial": "...",
+  "brand": "...",
+  "model": "...",
+  "install_date": "...",
+  "stamp_date": "...",
+  "check_date": "...",
+  "replace_date": "2017-08-12",
+  "ratio": "...",
+  "unit": "...",
+  "houses_cards_id" : "...",
+  "flats_id" : "...",
+  "rooms_id" : "...",
+  "capacity" : "...",
+  "values" : [
+    {include-json:counters-values/values.json}
+  ]
+
+}
