@@ -6,6 +6,7 @@
     <ul>
         <li><a href="#houses-array">Описание полей объекта массива `houses`</li>
         <li><a href="#array-entrances-object">Описание полей объекта массива `entrances`</li>
+        <li><a href="#array-premises-object"> Описание полей оъекта в массиве `premises`</li>
     </ul>
     <li><a href="#counters">Описание файла со сведениями об общедомовых и квартирных счетчиках и истории показаний по ним</a></li>
     <li><a href="#accruals">Описание файла со сведениями о начислениях</a></li>
