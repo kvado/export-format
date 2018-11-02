@@ -1,5 +1,5 @@
 
-#### <a id="array-accounts-object"></a>Описание объекта массива `accounts`
+### <a id="array-accounts-object"></a>Описание объекта массива `accounts`
 
 |Поле|Название поля|Тип|Описание|
 |---|---|---|---|
