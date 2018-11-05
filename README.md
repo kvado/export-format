@@ -107,7 +107,7 @@ Json файл должен иметь следующую струкуру:
                   "id": "...",
                   "type": "...",
                   "main_payer": "...",
-                  "share": "1\/2",
+                  "share": "1/2",
                   "mobile_phone_1": "...",
                   "mobile_phone_2": "...",
                   "home_phone": "...",

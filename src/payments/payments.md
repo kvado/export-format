@@ -3,7 +3,7 @@
 Json файл должен иметь следующую струкуру:
 <pre>
 [
-{include-json:payments/payments.json}
+{json:../payments/payments.json}
 ]
 </pre>
 

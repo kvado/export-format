@@ -20,4 +20,4 @@
 |residents|Жители(Собственники)|array|Массив с [объектами, хранящими информацию о жителях и собственниках](#array-owners-object)|
 
 
-{include:residents/resident.md}
+{text:../residents/resident.md}

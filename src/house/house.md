@@ -13,5 +13,5 @@
 |premises|Помещения|array|Массив с [объектами, хранящими информацию о помещениях](#array-premises-object)|
 
 
-{include:entrances/entrance.md}
-{include:premise/premise.md}
+{text:../entrances/entrance.md}
+{text:../premise/premise.md}

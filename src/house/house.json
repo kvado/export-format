@@ -8,10 +8,10 @@
       "cadastral_number": "",
       "gis_id": "...",
       "entrances": [
-        {include-json: entrances/entrance.json}
+        {json:../entrances/entrance.json}
       ],
       "premises": [
-        {include-json: premise/premise.json}
+        {json:../premise/premise.json}
       ]
     }
   ]

@@ -20,6 +20,6 @@
 |accounts|Лицевые счета|array|Массив с [объектами, хранящими данные о ЛС](#array-accounts-object) |
 
 
-{include:rooms/room.md}
+{text:../rooms/room.md}
 
-{include:accounts/account.md}
+{text:../accounts/account.md}

@@ -2,7 +2,7 @@
 
 Json файл должен иметь следующую струкуру:
 <pre>
-{include-json:counters/counters.json}
+{json:../counters/counters.json}
 </pre>
 
 

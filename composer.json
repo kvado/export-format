@@ -1,0 +1,9 @@
+{
+    "require": {
+        "vdme/github-readme-compose": "^1"
+    },
+    "autoload": {
+        "psr-4": {"Readme\\": "vendor/vdme/github-readme-compose/src/"}
+    }
+
+}

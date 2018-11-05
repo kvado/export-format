@@ -23,8 +23,8 @@
 |individual|Физ. лицо|object|Объект с [данными о владельце, если физ. лицо](#individual-object)|
 |entity|Юр. лицо|object|Объект с [данными о владельце, если юр. лицо](#entity-object)|
 
-{include:residences/residence.md}
+{text:../residences/residence.md}
 
-{include:individual/individual.md}
+{text:../individual/individual.md}
 
-{include:entity/entity.md}
+{text:../entity/entity.md}

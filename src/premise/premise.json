@@ -15,9 +15,9 @@
               "intercom": "...",
               "cadastral_number": "...",
               "rooms": [
-{include-json:rooms/room.json}
+{json:../rooms/room.json}
               ],
               "accounts": [
-{include-json:accounts/account.json}
+{json:../accounts/account.json}
               ]
             }

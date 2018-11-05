@@ -1,15 +1,15 @@
 # export-format
 Описание формата файлов для экспорта данных в сторонние системы
 
-{include:contents.md}
+{text:contents.md}
 
-{include:houses/houses.md}
+{text:houses/houses.md}
 
-{include:counters/counters.md}
+{text:counters/counters.md}
 
-{include:accruals/accruals.md}
+{text:accruals/accruals.md}
 
-{include:payments/payments.md}
+{text:payments/payments.md}
 
 ## <a id="custom-types"></a>Пользовательские типы
 

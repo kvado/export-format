@@ -2,7 +2,7 @@
 
 Json файл должен иметь следующую струкуру:
 <pre>
-{include-json:accruals/accruals.json}
+{json:../accruals/accruals.json}
 </pre>
 
 ### Описание объектов массива начислений

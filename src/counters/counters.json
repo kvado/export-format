@@ -18,7 +18,7 @@
   "capacity" : "...",
   "gis_id" : "...",
   "values" : [
-    {include-json:counters-values/values.json}
+    {json:../counters-values/values.json}
   ]
 
 }

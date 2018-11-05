@@ -1,0 +1,14 @@
+{
+    "name":"vdme/github-readme-compose",
+    "description":"This package build a description file readme.md from some of related files",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {"Readme\\": "src/"}
+    }
+}
