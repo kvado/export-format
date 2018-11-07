@@ -16,8 +16,8 @@
   "date_to": "...",
   "flats_relation": "...",
   "residence": [
-    {include-json:residences/residence.json}
+    {json:../residences/residence.json}
   ],
-  "individual": {include-json: individual/individual.json},
-  "entity": {include-json: entity/entity.json}
+  "individual": {json:../individual/individual.json},
+  "entity": {json:../entity/entity.json}
 }

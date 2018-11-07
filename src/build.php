@@ -6,7 +6,7 @@
  * Time: 11:29
  */
 
-function render($file)
+/*function render($file)
 {
     $template = file_get_contents($file);
     $template = preg_replace_callback("/\{include\:(.+)\}/", function ($matches) {
@@ -95,9 +95,11 @@ function prettyPrint( $json )
     }
 
     return $result;
-}
+}*/
 
-file_put_contents("../README.md", render("README.md"));
+require_once "../vendor/autoload.php";
+$renderer = new \Readme\Renderer();
+file_put_contents("../README.md", $renderer->render("README.md"));
 
 
 

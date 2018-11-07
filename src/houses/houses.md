@@ -2,8 +2,8 @@
 
 Json файл должен иметь следующую струкуру:
 <pre>
-{include-json:house/house.json}
+{json:../house/house.json}
 </pre>
 Объекта массива houses (дома), который включает в себя:
 
-{include:house/house.md}
+{text:../house/house.md}
