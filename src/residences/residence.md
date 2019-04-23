@@ -14,22 +14,22 @@
 |Поле|Название поля|Тип|Описание|
 |---|---|---|---|
 |country|Страна|string||
-|region|Страна|string||
-|district|Страна|string||
-|city|Страна|string||
-|locality|Страна|string||
-|street|Страна|string||
-|house|Страна|string||
-|flat|Страна|string||
+|region|Регион|string||
+|district|Район|string||
+|city|Город|string||
+|locality|Населенный пункт|string||
+|street|Улица|string||
+|house|Дом|string||
+|flat|Квартира|string||
 
 ### <a id="to"></a>Описание объекта `to`
 |Поле|Название поля|Тип|Описание|
 |---|---|---|---|
 |country|Страна|string||
-|region|Страна|string||
-|district|Страна|string||
-|city|Страна|string||
-|locality|Страна|string||
-|street|Страна|string||
-|house|Страна|string||
-|flat|Страна|string||
+|region|Регион|string||
+|district|Район|string||
+|city|Город|string||
+|locality|Населенный пункт|string||
+|street|Улица|string||
+|house|Дом|string||
+|flat|Квартира|string||
